@@ -24,7 +24,8 @@ describe("Bar", function() {
   describe("exponentOf", function() {
 
     it("a quantity representing the power to which a given number or expression is to be raised", function() {
-      expect;
+      var exponentOf2 = bar.exponentOf(2);
+      expect( exponentOf2(4) ).eq(16);
     });
 
   });
@@ -40,7 +41,7 @@ describe("Bar", function() {
   describe("cipher", function() {
 
     it("takes text and replaces it with characters", function() {
-      expect;
+      expect( bar.cipher("hello") ).eq("ÌÉÐÐÓ");
     });
 
   });
@@ -48,7 +49,7 @@ describe("Bar", function() {
   describe("decipher", function() {
 
     it("takes characters and turns them inot text", function() {
-      expect;
+      expect( bar.decipher("ÌÉÐÐÓ") ).eq("hello");
     });
 
   });  
@@ -56,7 +57,7 @@ describe("Bar", function() {
   describe("rot13", function() {
 
     it("JD's favorite", function() {
-      expect;
+      expect( bar.rot13("Hello world") ).eq("Uryyb jbeyq");
     });
 
   });   
